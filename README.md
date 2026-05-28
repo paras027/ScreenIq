@@ -1,4 +1,4 @@
-Link of walkthrough Video of Project -- [text](https://drive.google.com/file/d/1FVKHLhSNgMWvXBEDyq51n3xvpua1wX_7/view?usp=sharing)
+Link of walkthrough Video of Project -- [Video Link](https://drive.google.com/file/d/1FVKHLhSNgMWvXBEDyq51n3xvpua1wX_7/view?usp=sharing)
 
 
 # ScreenIQ — AI-Powered Candidate Screener
