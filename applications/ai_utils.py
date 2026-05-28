@@ -31,22 +31,6 @@ def screen_candidate(job_description, resume):
     return json.loads(content)
 
 
-def stream_candidate(job_description, resume):
-    """Generator that yields raw text chunks from Gemini stream."""
-    if _is_mock():
-        import time
-        for char in MOCK_RESPONSE:
-            yield char
-            time.sleep(0.01)
-        return
-
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-    prompt = _build_prompt(job_description, resume)
-    for chunk in client.models.generate_content_stream(model="gemini-2.5-flash", contents=prompt):
-        if chunk.text:
-            yield chunk.text
-
-
 def _build_prompt(job_description, resume):
     return f"""
     You are an AI HR screening assistant.
