@@ -14,7 +14,7 @@ class ApplicationListView(APIView):
     def get(self, request):
         applications = Application.objects.filter(
             created_by=request.user
-        )
+        ).order_by('-created_at')
         paginator = ApplicationPagination()
         paginated_applications = paginator.paginate_queryset(applications, request)
         serializer = ApplicationSerializer(
