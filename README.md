@@ -1,3 +1,6 @@
+Link of walkthrough Video of Project -- [text](https://drive.google.com/file/d/1FVKHLhSNgMWvXBEDyq51n3xvpua1wX_7/view?usp=sharing)
+
+
 # ScreenIQ — AI-Powered Candidate Screener
 
 A full-stack internal tool for HR teams to screen job applicants using AI. Paste a job description and resume, get an AI-generated match score with reasoning, and manage past screenings from a dashboard.
